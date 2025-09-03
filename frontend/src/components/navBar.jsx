@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import nightMode from "../assets/night-mode.png";
-import nightMode2 from "../assets/night-mode2.png";
+import nightMode from "../assets/nightMode.png";
+import nightMode2 from "../assets/nightMode2.png";
 import language2 from "../assets/language2.png";
 import language from "../assets/language.png";
 import icon from "../assets/icon.png";
@@ -29,9 +29,11 @@ const NavBar = () => {
         <img src={icon} className="w-7" />
       </div>
       <div className="w-fit flex gap-4 px-4 py-1.5 border dark:border-white border-gray-800 rounded-md">
-        <h1 className="text-gray-800 dark:text-gray-100 underline">{t('about')}</h1>
-        <h1 className="text-gray-800 dark:text-gray-100">{t('projects')}</h1>
-        <h1 className="text-gray-800 dark:text-gray-100">{t('tools')}</h1>
+        <h1 className="text-gray-800 dark:text-gray-100 underline">
+          {t("about")}
+        </h1>
+        <h1 className="text-gray-800 dark:text-gray-100">{t("projects")}</h1>
+        <h1 className="text-gray-800 dark:text-gray-100">{t("tools")}</h1>
       </div>
       <div className="relative w-fit flex gap-4 px-4 py-1.5 border border-black dark:border-white rounded-md">
         <img
