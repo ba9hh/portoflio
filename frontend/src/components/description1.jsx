@@ -18,7 +18,7 @@ const Description1 = () => {
         <div className="w-1/2 flex justify-center">
           <img
             src={me}
-            className="w-1/2 rounded-full aspect-square object-cover"
+            className="w-1/3 rounded-full aspect-square object-cover"
           />
         </div>
       </div>
