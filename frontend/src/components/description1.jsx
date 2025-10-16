@@ -6,7 +6,7 @@ const Description1 = () => {
   const { t } = useTranslation();
   return (
     <div className="w-full border-white">
-      <div className="flex flex-col md:flex-row items-center justify-around gap-5 border  rounded-md px-5 py-2 border-white bg-gray-200 dark:bg-gray-700 md:py-10">
+      <div className="flex flex-col md:flex-row items-center justify-around gap-5 border  rounded-md px-5 py-2 border-white bg-gray-200 dark:bg-gray-700">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-2">
           <h1 className="text-gray-700 dark:text-white text-2xl font-bold">
             {t("name")}
@@ -18,7 +18,7 @@ const Description1 = () => {
         <div className="w-1/2 flex justify-center">
           <img
             src={me}
-            className="w-1/3 rounded-full aspect-square object-cover"
+            className="w-1/2 rounded-full aspect-square object-cover"
           />
         </div>
       </div>
