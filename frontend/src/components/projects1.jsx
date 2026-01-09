@@ -26,7 +26,7 @@ const Projects1 = () => {
           </div>
         </div>
       )}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 border border-gray-500 dark:border-white">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-500 dark:border-white p-4 md:p-0">
         <div className="flex items-center gap-1">
           <img className="w-7" src={dyari} />
           <h1 className="text-2xl font-medium text-amber-300">Dyari</h1>

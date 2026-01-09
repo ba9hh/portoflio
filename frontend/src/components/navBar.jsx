@@ -26,7 +26,7 @@ const NavBar = () => {
   }, [i18n.language]);
   return (
     <>
-      <div className="hidden w-full md:flex justify-between dark:border">
+      <div className="hidden w-full md:flex justify-between dark:border bg-white dark:bg-gray-800 md:px-10 md:pt-10">
         <div className="w-fit flex gap-4 px-2 py-1.5 border dark:border-white border-black rounded-md">
           <img src={icon} className="w-7" />
         </div>

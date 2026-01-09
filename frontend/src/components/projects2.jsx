@@ -25,14 +25,14 @@ const Projects2 = () => {
           </div>
         </div>
       )}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 border border-gray-600 dark:border-white">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-600 dark:border-white p-4 md:p-0">
         <div className="flex items-center gap-1">
           <img className="w-7" src={babar} />
           <h1 className="text-2xl font-medium text-gray-500 dark:text-gray-300">
             Babar
           </h1>
         </div>
-        <p className="text-gray-600 dark:text-gray-100 text-center w-2/3">
+        <p className="text-gray-600 dark:text-gray-100 text-center md:w-2/3">
           {t("babarDescription")}
         </p>
         <div className="text-gray-400 mt-2">
