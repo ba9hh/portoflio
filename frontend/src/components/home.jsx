@@ -19,22 +19,18 @@ const Home = () => {
   }, [isDarkMode]);
   return (
     <div className="h-min-screen w-full bg-white dark:bg-gray-900">
-      <div className=" bg-red-200 w-full">
-        <div className=" bg-white dark:bg-gray-800 md:px-10 md:pt-10">
-          <NavBar />
-        </div>
-        <Description />
-        <div className=" bg-white dark:bg-gray-800 md:px-10 pb-10">
-          <h1 className="text-gray-600 dark:text-gray-50 font-bold p-2">
-            {t("favorites")}
-          </h1>
-          <Projects1 />
-          <Projects3 />
-          <Projects2 />
-        </div>
-        <div className="flex w-full bg-white dark:bg-gray-800 px-10 pb-12">
-          <Technologies />
-        </div>
+      <NavBar />
+      <Description />
+      <div className=" bg-white dark:bg-gray-800 md:px-10 pb-10">
+        <h1 className="text-gray-600 dark:text-gray-50 font-bold p-2">
+          {t("favorites")}
+        </h1>
+        <Projects1 />
+        <Projects3 />
+        <Projects2 />
+      </div>
+      <div className="flex w-full bg-white dark:bg-gray-800 px-10 pb-12">
+        <Technologies />
       </div>
     </div>
   );

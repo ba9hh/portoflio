@@ -75,17 +75,19 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden flex justify-between items-center p-4 border-b">
-        <div className="relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
-          <img src={menu} className="w-5 h-5" />
-        </div>
-        <h1 className="text-sky-600 font-semibold text-lg">Ezzedine Jlidi</h1>
-        <div className="relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
-          <img
-            src={isDarkMode ? nightMode2 : nightMode}
-            className="w-5 h-5"
-            onClick={() => setIsDarkMode((prev) => !prev)}
-          />
+      <div className="md:hidden sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 dark:supports-[backdrop-filter]:bg-stone-900/60 dark:bg-stone-900/50 border-b border-stone-200/60 dark:border-stone-800">
+        <div className="md:hidden flex justify-between items-center p-4">
+          <div className="relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
+            <img src={menu} className="w-5 h-5" />
+          </div>
+          <h1 className="text-sky-600 font-semibold text-lg">Ezzedine Jlidi</h1>
+          <div className="relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
+            <img
+              src={isDarkMode ? nightMode2 : nightMode}
+              className="w-5 h-5"
+              onClick={() => setIsDarkMode((prev) => !prev)}
+            />
+          </div>
         </div>
       </div>
     </>
