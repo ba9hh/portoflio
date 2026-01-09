@@ -1,5 +1,5 @@
 import React from "react";
-import Description from "./description1";
+import Description from "./description";
 import Projects1 from "./projects1";
 import Projects2 from "./projects2";
 import Projects3 from "./projects3";
@@ -20,13 +20,11 @@ const Home = () => {
   return (
     <div className="h-min-screen w-full bg-white dark:bg-gray-900">
       <div className=" bg-red-200 w-full">
-        <div className="h-full w-4/4 bg-white dark:bg-gray-800 px-10 pt-10">
+        <div className=" bg-white dark:bg-gray-800 md:px-10 md:pt-10">
           <NavBar />
         </div>
-        <div className="h-full bg-white dark:bg-gray-800 pt-10 pb-7 flex justify-center px-10">
-          <Description />
-        </div>
-        <div className="h-full w-4/4 bg-white dark:bg-gray-800 px-10 pb-10">
+        <Description />
+        <div className=" bg-white dark:bg-gray-800 md:px-10 pb-10">
           <h1 className="text-gray-600 dark:text-gray-50 font-bold p-2">
             {t("favorites")}
           </h1>

@@ -31,7 +31,7 @@ const Projects1 = () => {
           <img className="w-7" src={dyari} />
           <h1 className="text-2xl font-medium text-amber-300">Dyari</h1>
         </div>
-        <p className="text-gray-600 dark:text-gray-100 text-center w-2/3">
+        <p className="text-gray-600 dark:text-gray-100 text-center md:w-2/3">
           {t("dyariDescription")}
         </p>
         <div className="text-gray-400 mt-2">
