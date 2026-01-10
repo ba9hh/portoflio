@@ -61,7 +61,7 @@ const KtebnaProject = () => {
           ></div>
           <div className="z-10 max-w-5xl w-full p-4">
             <img
-              src={stage}
+              src={ktebna}
               alt="Enlarged"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
