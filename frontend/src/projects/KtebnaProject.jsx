@@ -19,7 +19,7 @@ const book = (
     <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
   </svg>
 );
-const Projects3 = () => {
+const KtebnaProject = () => {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -28,7 +28,7 @@ const Projects3 = () => {
       <div className="w-full md:hidden cursor-pointer">
         <img src={stage} onClick={() => setIsModalOpen(true)} />
       </div>
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-600 dark:border-white p-4 md:p-0">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-600 dark:border-white p-6 md:p-0">
         <div className="flex items-center gap-1">
           <span className="w-7 text-amber-700">{book}</span>
           <h1 className="text-2xl font-medium text-amber-800 text-[#1894A5]">
@@ -72,4 +72,4 @@ const Projects3 = () => {
   );
 };
 
-export default Projects3;
+export default KtebnaProject;

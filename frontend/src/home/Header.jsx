@@ -8,7 +8,7 @@ import { useTheme } from "../ThemeContext";
 import { useTranslation } from "react-i18next";
 import menu from "../assets/menu.svg";
 
-const NavBar = () => {
+const Header = () => {
   const { isDarkMode, setIsDarkMode } = useTheme();
   const { t, i18n } = useTranslation();
   const [langMenuOpen, setLangMenuOpen] = useState(false);
@@ -94,4 +94,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Header;
