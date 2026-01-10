@@ -51,7 +51,7 @@ const KtebnaProject = () => {
         </div>
       </div>
       <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
-        <img src={stage} onClick={() => setIsModalOpen(true)} />
+        <img src={ktebna} onClick={() => setIsModalOpen(true)} />
       </div>
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
