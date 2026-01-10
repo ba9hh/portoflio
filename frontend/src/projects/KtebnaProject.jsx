@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import stage from "../assets/ktebna.png";
+import ktebna from "../assets/ktebna.png";
 import { useTranslation } from "react-i18next";
 const book = (
   <svg
@@ -26,7 +26,7 @@ const KtebnaProject = () => {
   return (
     <div className="flex flex-col md:flex-row w-full">
       <div className="w-full md:hidden cursor-pointer">
-        <img src={stage} onClick={() => setIsModalOpen(true)} />
+        <img src={ktebna} onClick={() => setIsModalOpen(true)} />
       </div>
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-600 dark:border-white p-6 md:p-0">
         <div className="flex items-center gap-1">
@@ -41,12 +41,12 @@ const KtebnaProject = () => {
         <div className="text-gray-400 mt-2">
           {t("websiteLink")} :{" "}
           <a
-            href={"https://ktebna.onrender.com/"}
+            href={"https://ktebna.com/"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800 transition-colors duration-200 text-sm"
           >
-            https://ktebna.onrender.com/
+            https://ktebna.com/
           </a>
         </div>
       </div>

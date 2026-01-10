@@ -37,12 +37,12 @@ const DyariProject = () => {
         <div className="text-gray-400 mt-2">
           {t("websiteLink")} :{" "}
           <a
-            href={"https://dyari.onrender.com/"}
+            href={"https://dyaritunisie.com/"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800 transition-colors duration-200 text-sm"
           >
-            https://dyari.onrender.com/
+            https://dyaritunisie.com/
           </a>
         </div>
       </div>
