@@ -24,7 +24,7 @@ const Description = () => {
         <div className="hidden md:w-1/2 md:flex justify-center">
           <img
             src={me}
-            className="w-1/2 rounded-full aspect-square object-cover p-16"
+            className="w-1/2 rounded-full aspect-square object-cover p-20"
           />
         </div>
       </div>
