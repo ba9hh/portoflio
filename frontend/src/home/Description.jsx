@@ -14,7 +14,7 @@ const Description = () => {
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-2">
-          <h1 className="text-gray-700 dark:text-white text-3xl font-bold hidden md:block">
+          <h1 className="text-sky-600 dark:text-white text-3xl font-bold hidden md:block">
             {t("name")}
           </h1>
           <p className="text-gray-500 dark:text-gray-200 font-semibolt text-center text-lg px-4">
