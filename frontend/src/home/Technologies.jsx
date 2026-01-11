@@ -53,6 +53,15 @@ const Technologies = () => {
             Mongo DB
           </h1>
         </div>
+        <div className="flex flex-col items-center">
+          <img
+            className="w-16 h-16 rounded-full object-cover"
+            src="https://avatars.githubusercontent.com/u/54469796?v=4"
+          />
+          <h1 className="text-gray-600 dark:text-gray-300 border-t border-gray-600 dark:border-white mt-3 w-full text-center">
+            Supabase
+          </h1>
+        </div>
       </div>
     </div>
   );
