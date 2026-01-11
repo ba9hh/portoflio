@@ -7,6 +7,7 @@ import icon from "../assets/icon.png";
 import { useTheme } from "../ThemeContext";
 import { useTranslation } from "react-i18next";
 import menu from "../assets/menu.svg";
+import menu1 from "../assets/menu1.svg";
 
 const Header = () => {
   const { isDarkMode, setIsDarkMode } = useTheme();
@@ -122,11 +123,11 @@ const Header = () => {
           <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
             <img
               onClick={() => setMenuOpen(!menuOpen)}
-              src={menu}
+              src={isDarkMode ? menu1 : menu}
               className="w-5 h-5"
             />
           </div>
-          <h1 className="text-sky-600 font-semibold text-lg text-center">
+          <h1 className="text-sky-600 font-semibold text-lg text-center dark:text-gray-50">
             Ezzedine Jlidi
           </h1>
           <div className="flex justify-end gap-1">

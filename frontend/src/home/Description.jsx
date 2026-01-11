@@ -6,7 +6,7 @@ const Description = () => {
   const { t } = useTranslation();
   return (
     <div className="w-full border-white bg-white dark:bg-gray-800 md:pt-10 pb-7 flex justify-center md:px-10">
-      <div className="flex flex-col md:flex-row items-center justify-around md:gap-5 border rounded-md md:px-5 py-2 border-white md:bg-gray-200 dark:bg-gray-700">
+      <div className="flex flex-col md:flex-row items-center justify-around md:gap-5 md:border rounded-md md:px-5 py-2 md:border-white md:bg-gray-200 dark:md:bg-gray-700">
         <div className="md:hidden flex justify-center py-4">
           <img
             src={me}
