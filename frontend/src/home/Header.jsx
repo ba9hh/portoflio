@@ -26,16 +26,26 @@ const Header = () => {
   }, [i18n.language]);
   return (
     <>
-      <div className="hidden w-full md:flex justify-between dark:border bg-white dark:bg-gray-800 md:px-10 md:pt-10">
+      <div
+        dir="ltr"
+        className="hidden w-full md:flex justify-between dark:border bg-white dark:bg-gray-800 md:px-10 md:pt-10"
+      >
         <div className="w-fit flex gap-4 px-2 py-1.5 border dark:border-white border-black rounded-md">
           <img src={icon} className="w-7" />
         </div>
         <div className="w-fit flex gap-4 px-4 py-1.5 border dark:border-white border-gray-800 rounded-md">
-          <h1 className="text-gray-800 dark:text-gray-100 underline">
+          <a
+            href="#about"
+            className="text-gray-800 dark:text-gray-100 underline"
+          >
             {t("about")}
-          </h1>
-          <h1 className="text-gray-800 dark:text-gray-100">{t("projects")}</h1>
-          <h1 className="text-gray-800 dark:text-gray-100">{t("tools")}</h1>
+          </a>
+          <a href="#projects" className="text-gray-800 dark:text-gray-100">
+            {t("projects")}
+          </a>
+          <a href="#tools" className="text-gray-800 dark:text-gray-100">
+            {t("tools")}
+          </a>
         </div>
         <div className="relative w-fit flex gap-4 px-4 py-1.5 border border-black dark:border-white rounded-md">
           <img
@@ -76,17 +86,28 @@ const Header = () => {
         </div>
       </div>
       <div className="md:hidden sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 dark:supports-[backdrop-filter]:bg-stone-900/60 dark:bg-stone-900/50 border-b border-stone-200/60 dark:border-stone-800">
-        <div className="md:hidden flex justify-between items-center p-4">
-          <div className="relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
+        <div className="md:hidden grid grid-cols-3 items-center p-4">
+          <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
             <img src={menu} className="w-5 h-5" />
           </div>
-          <h1 className="text-sky-600 font-semibold text-lg">Ezzedine Jlidi</h1>
-          <div className="relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
-            <img
-              src={isDarkMode ? nightMode2 : nightMode}
-              className="w-5 h-5"
-              onClick={() => setIsDarkMode((prev) => !prev)}
-            />
+          <h1 className="text-sky-600 font-semibold text-lg text-center">
+            Ezzedine Jlidi
+          </h1>
+          <div className="flex justify-end gap-1">
+            <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
+              <img
+                src={isDarkMode ? nightMode2 : nightMode}
+                className="w-5 h-5"
+                onClick={() => setIsDarkMode((prev) => !prev)}
+              />
+            </div>
+            <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
+              <img
+                src={isDarkMode ? language2 : language}
+                className="w-6 h-6"
+                onClick={() => setLangMenuOpen(!langMenuOpen)}
+              />
+            </div>
           </div>
         </div>
       </div>

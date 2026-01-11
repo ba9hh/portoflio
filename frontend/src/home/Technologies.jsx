@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 const Technologies = () => {
   const { t } = useTranslation();
   return (
-    <div className="w-full bg-white dark:bg-gray-800 px-10 pb-12">
+    <div className="w-full bg-white dark:bg-gray-800 md:px-10 pb-12">
       <h1 className="text-gray-800 dark:text-gray-50 font-bold p-2">
         {t("technologies")}
       </h1>
-      <div className="flex gap-6 mt-4">
+      <div className="flex flex-row flex-wrap justify-center md:justify-start gap-6 mt-2 md:mt-0">
         <div className="flex flex-col items-center">
           <img
             className="w-16 h-16 rounded-full object-cover"

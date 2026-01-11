@@ -18,9 +18,17 @@ const Home = () => {
   return (
     <div className="h-min-screen w-full bg-white dark:bg-gray-900">
       <Header />
-      <Description />
-      <Projects />
-      <Technologies />
+      <section id="about">
+        <Description />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="tools">
+        <Technologies />
+      </section>
     </div>
   );
 };
