@@ -12,6 +12,7 @@ const Header = () => {
   const { isDarkMode, setIsDarkMode } = useTheme();
   const { t, i18n } = useTranslation();
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -86,9 +87,44 @@ const Header = () => {
         </div>
       </div>
       <div className="md:hidden sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 dark:supports-[backdrop-filter]:bg-stone-900/60 dark:bg-stone-900/50 border-b border-stone-200/60 dark:border-stone-800">
+        {menuOpen && (
+          <div
+            className="md:hidden absolute top-full left-0 w-full 
+                  bg-white/90 dark:bg-stone-900/90 backdrop-blur
+                  border-b border-stone-200 dark:border-stone-800"
+          >
+            <ul className="flex flex-col divide-y divide-stone-200 dark:divide-stone-800">
+              <a
+                href="#about"
+                className="px-6 py-4 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
+                onClick={() => setMenuOpen(false)}
+              >
+                About
+              </a>
+              <a
+                href="#projects"
+                className="px-6 py-4 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
+                onClick={() => setMenuOpen(false)}
+              >
+                Projects
+              </a>
+              <a
+                href="#tools"
+                className="px-6 py-4 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
+                onClick={() => setMenuOpen(false)}
+              >
+                Tools
+              </a>
+            </ul>
+          </div>
+        )}
         <div className="md:hidden grid grid-cols-3 items-center p-4">
           <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
-            <img src={menu} className="w-5 h-5" />
+            <img
+              onClick={() => setMenuOpen(!menuOpen)}
+              src={menu}
+              className="w-5 h-5"
+            />
           </div>
           <h1 className="text-sky-600 font-semibold text-lg text-center">
             Ezzedine Jlidi
