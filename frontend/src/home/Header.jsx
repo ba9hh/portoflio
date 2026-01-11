@@ -100,21 +100,21 @@ const Header = () => {
                 className="px-6 py-4 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
-                About
+                {t("about")}
               </a>
               <a
                 href="#projects"
                 className="px-6 py-4 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
-                Projects
+                {t("projects")}
               </a>
               <a
                 href="#tools"
                 className="px-6 py-4 text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
-                Tools
+                {t("tools")}
               </a>
             </ul>
           </div>
