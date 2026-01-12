@@ -11,8 +11,8 @@ const Projects = () => {
       <h1 className="text-gray-600 dark:text-gray-50 font-bold p-2">
         {t("favorites")}
       </h1>
-      <DyariProject />
       <KtebnaProject />
+      <DyariProject />
       <BabarProject />
     </div>
   );

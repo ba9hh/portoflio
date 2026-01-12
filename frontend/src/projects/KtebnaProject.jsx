@@ -25,7 +25,7 @@ const KtebnaProject = () => {
 
   return (
     <div className="flex flex-col md:flex-row w-full">
-      <div className="w-full md:hidden cursor-pointer">
+      <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
         <img src={ktebna} onClick={() => setIsModalOpen(true)} />
       </div>
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-600 dark:border-white p-6 md:p-0">
@@ -50,7 +50,7 @@ const KtebnaProject = () => {
           </a>
         </div>
       </div>
-      <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
+      <div className="w-full md:hidden cursor-pointer">
         <img src={ktebna} onClick={() => setIsModalOpen(true)} />
       </div>
       {isModalOpen && (
