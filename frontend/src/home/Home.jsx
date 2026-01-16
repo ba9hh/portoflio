@@ -16,19 +16,19 @@ const Home = () => {
     }
   }, [isDarkMode]);
   return (
-    <div className="h-min-screen w-full bg-white dark:bg-gray-900">
+    <div className="h-min-screen w-full bg-gray-50 dark:bg-gray-900">
       <Header />
-      <section id="about">
+      <div className="flex gap-1">
+        <div className="w-3/4 mt-10">
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="tools">
+            <Technologies />
+          </section>
+        </div>
         <Description />
-      </section>
-
-      <section id="projects">
-        <Projects />
-      </section>
-
-      <section id="tools">
-        <Technologies />
-      </section>
+      </div>
     </div>
   );
 };

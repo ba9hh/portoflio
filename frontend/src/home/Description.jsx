@@ -5,27 +5,23 @@ import { useTranslation } from "react-i18next";
 const Description = () => {
   const { t } = useTranslation();
   return (
-    <div className="w-full border-white bg-white dark:bg-gray-800 md:pt-10 pb-7 flex justify-center md:px-10">
-      <div className="flex flex-col md:flex-row items-center justify-around md:gap-5 md:border rounded-md md:px-5 py-2 md:border-white md:bg-gray-200 dark:md:bg-gray-700">
-        <div className="md:hidden flex justify-center py-4">
+    <div className="sticky top-20 ml-auto h-fit w-1/4  bg-white dark:bg-gray-800 mt-10  flex flex-col justify-center md:mx-10">
+      <div className="flex flex-col items-center h-fit md:gap-0 rounded-md  py-4 dark:md:bg-gray-700 shadow">
+        <div className="flex justify-center mb-2">
           <img
             src={me}
-            className="w-1/4 rounded-full aspect-square object-cover"
+            className="h-16 w-h-16 rounded-full aspect-square object-cover"
           />
         </div>
-        <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-2">
-          <h1 className="text-gray-700 dark:text-white text-3xl font-bold hidden md:block">
+        <div className="w-full flex flex-col items-center justify-center gap-2">
+          <h1 className="text-gray-700 dark:text-white text-xl font-semibold hidden md:block">
             {t("name")}
           </h1>
-          <p className="text-gray-500 dark:text-gray-200 font-semibolt text-center text-lg px-4">
-            {t("description")}
-          </p>
-        </div>
-        <div className="hidden md:w-1/2 md:flex justify-center">
-          <img
-            src={me}
-            className="w-1/2 rounded-full aspect-square object-cover p-20"
-          />
+          <ul className="list-disc list-inside text-gray-500 dark:text-gray-200 font-semibolt px-4 text-sm md:text-md pb-4">
+            <li>Full-stack developer</li>
+            <li>Graduate in Génie Logiciel et Systèmes d'Information</li>
+            <li>Self-taught in web development</li>
+          </ul>
         </div>
       </div>
     </div>
