@@ -30,55 +30,58 @@ const Header = () => {
     <>
       <div
         dir="ltr"
-        className="hidden w-full md:flex justify-between dark:border bg-white dark:bg-gray-800 md:px-10 md:pt-10"
+        className="sticky top-0 z-30 border-b border-gray-200 hidden w-full md:flex justify-between dark:border bg-white dark:bg-gray-800 md:px-10 py-3"
       >
-        <div className="w-fit flex gap-4 px-2 py-1.5 border dark:border-white border-black rounded-md">
-          <img src={icon} className="w-7" />
+        <div className="w-fit flex gap-4 px-2 py-1.5 border dark:border-white border-gray-400 rounded-md">
+          <img src={icon} className="w-5" />
         </div>
-        <div className="w-fit flex gap-4 px-4 py-1.5 border dark:border-white border-gray-800 rounded-md">
+        <div className="w-fit flex gap-4 px-4 py-1.5 dark:border-white  rounded-md">
           <a
             href="#about"
-            className="text-gray-800 dark:text-gray-100 underline"
+            className="text-gray-800 dark:text-gray-100 underline text-sm"
           >
             {t("about")}
           </a>
-          <a href="#projects" className="text-gray-800 dark:text-gray-100">
+          <a
+            href="#projects"
+            className="text-gray-800 dark:text-gray-100 text-sm"
+          >
             {t("projects")}
           </a>
-          <a href="#tools" className="text-gray-800 dark:text-gray-100">
+          <a href="#tools" className="text-gray-800 dark:text-gray-100 text-sm">
             {t("tools")}
           </a>
         </div>
-        <div className="relative w-fit flex gap-4 px-4 py-1.5 border border-black dark:border-white rounded-md">
+        <div className="relative w-fit flex gap-4 px-4 py-1.5 border border-gray-400 dark:border-white rounded-md">
           <img
             src={isDarkMode ? nightMode2 : nightMode}
-            className="w-6 h-6"
+            className="w-5 h-5"
             onClick={() => setIsDarkMode((prev) => !prev)}
           />
 
           <div className="">
             <img
               src={isDarkMode ? language2 : language}
-              className="w-6 h-6"
+              className="w-5 h-5"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
             />
             {langMenuOpen && (
               <div className="absolute mt-4 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-white rounded shadow-lg w-40 text-center z-10 -right-0.5">
                 <button
                   onClick={() => changeLanguage("en")}
-                  className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white"
+                  className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white text-sm"
                 >
                   English
                 </button>
                 <button
                   onClick={() => changeLanguage("fr")}
-                  className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white"
+                  className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white text-sm"
                 >
                   Français
                 </button>
                 <button
                   onClick={() => changeLanguage("ar")}
-                  className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white"
+                  className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white text-sm"
                 >
                   العربية
                 </button>
