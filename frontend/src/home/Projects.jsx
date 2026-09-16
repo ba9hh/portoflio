@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DyariProject from "../projects/DyariProject";
 import BabarProject from "../projects/BabarProject";
 import KtebnaProject from "../projects/KtebnaProject";
+import AthathProject from "../projects/AthathProject";
 import upArrow from "../assets/up-arrow.png";
 import { useTranslation } from "react-i18next";
 
@@ -30,6 +31,7 @@ const Projects = () => {
           <KtebnaProject />
           <DyariProject />
           <BabarProject />
+          <AthathProject />
         </div>
       )}
     </div>
