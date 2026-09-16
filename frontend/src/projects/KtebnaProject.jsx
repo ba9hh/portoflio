@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import ktebna from "../assets/ktebna.png";
+import ktebna from "../assets/ktebna1.png";
 import { useTranslation } from "react-i18next";
 const book = (
   <svg

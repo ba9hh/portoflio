@@ -1,5 +1,5 @@
 import { useState } from "react";
-import dyariImg from "../assets/dyari2.png";
+import dyariImg from "../assets/dyari3.png";
 import Modal from "../components/modal";
 import dyari from "../assets/dyari.svg";
 import { useTranslation } from "react-i18next";
