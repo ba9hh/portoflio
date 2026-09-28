@@ -7,7 +7,7 @@ const AthathProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col md:flex-row w-full mt-2 md:">
+    <div className="flex flex-col md:flex-row w-full mt-4 md:mt-0">
       <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
         <img src={dyariImg} onClick={() => setIsModalOpen(true)} />
       </div>
@@ -49,14 +49,6 @@ const AthathProject = () => {
           </div>
         </div>
       )}
-      {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <h2 className="text-2xl font-bold mb-4 text-center text-gray-900 dark:text-white">
-          This is a Dialog!
-        </h2>
-        <p className="text-gray-700 dark:text-gray-300 text-center">
-          You can put any content inside here.
-        </p>
-      </Modal> */}
     </div>
   );
 };
