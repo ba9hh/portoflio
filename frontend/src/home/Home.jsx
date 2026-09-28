@@ -18,8 +18,11 @@ const Home = () => {
   return (
     <div className="min-h-screen w-full bg-gray-50 dark:bg-gray-900">
       <Header />
-      <div className="flex gap-1">
-        <div className="w-3/4 mt-10">
+      <div className="flex flex-col md:flex-row gap-1">
+        <div className="md:hidden">
+          <Description />
+        </div>
+        <div className="w-full md:w-3/4 mt-4 md:mt-10">
           <section id="projects">
             <Projects />
           </section>

@@ -11,7 +11,7 @@ const Projects = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className=" bg-gray-50 dark:bg-gray-800 md:ml-10 pb-10">
+    <div className=" bg-gray-50 dark:bg-gray-800 md:ml-10 pb-4 md:pb-10">
       <div
         className="flex justify-between items-center px-3 p-2 mb-4 bg-white dark:md:bg-gray-700 shadow-2xs w-full rounded-sm border border-gray-200 border-b-0"
         onClick={() => setOpen((prev) => !prev)}
