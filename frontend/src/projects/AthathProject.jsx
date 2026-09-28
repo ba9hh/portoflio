@@ -7,7 +7,7 @@ const AthathProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col md:flex-row w-full mt-4 md:mt-0">
+    <div className="flex flex-col md:flex-row w-full mt-4 md:gap-4">
       <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
         <img src={dyariImg} onClick={() => setIsModalOpen(true)} />
       </div>

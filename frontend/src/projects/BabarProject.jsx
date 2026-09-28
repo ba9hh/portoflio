@@ -6,7 +6,7 @@ const BabarProject = () => {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="flex flex-col md:flex-row w-full mt-4 md:mt-0">
+    <div className="flex flex-col md:flex-row w-full mt-4 md:gap-4">
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div

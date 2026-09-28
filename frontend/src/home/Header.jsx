@@ -122,7 +122,7 @@ const Header = () => {
             </ul>
           </div>
         )}
-        <div className="md:hidden p-4">
+        <div className="md:hidden grid grid-cols-3 items-center p-4">
           {/* <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
             <img
               onClick={() => setMenuOpen(!menuOpen)}
@@ -130,9 +130,25 @@ const Header = () => {
               className="w-5 h-5"
             />
           </div> */}
+          <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
+            <img
+              src={isDarkMode ? language2 : language}
+              className="w-6 h-6"
+              onClick={() => setLangMenuOpen(!langMenuOpen)}
+            />
+          </div>
           <h1 className="text-sky-600 font-semibold text-lg text-center dark:text-gray-50">
             Ezzedine Jlidi
           </h1>
+          <div className="flex justify-end">
+            <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
+              <img
+                src={isDarkMode ? nightMode2 : nightMode}
+                className="w-5 h-5"
+                onClick={() => setIsDarkMode((prev) => !prev)}
+              />
+            </div>
+          </div>
           {/* <div className="flex justify-end gap-1">
             <div className="w-fit relative rounded-xl border border-stone-300 bg-white/80 p-2 dark:border-stone-700 dark:bg-stone-800">
               <img

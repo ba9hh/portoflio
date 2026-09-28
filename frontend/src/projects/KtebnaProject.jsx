@@ -24,7 +24,7 @@ const KtebnaProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="flex flex-col md:flex-row w-full">
+    <div className="flex flex-col md:flex-row w-full md:gap-4">
       <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
         <img src={ktebna} onClick={() => setIsModalOpen(true)} />
       </div>

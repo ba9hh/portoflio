@@ -7,7 +7,7 @@ const DyariProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col md:flex-row w-full mt-4 md:mt-0">
+    <div className="flex flex-col md:flex-row md:gap-4 w-full mt-4">
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-200 dark:border-white p-6 md:p-0 dark:md:bg-gray-700 bg-white">
         <div className="flex items-center gap-1">
           <img className="w-7" src={dyari} />

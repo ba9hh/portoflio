@@ -9,7 +9,7 @@ const Description = () => {
   return (
     <div className="sticky top-20 ml-auto h-fit w-full md:w-1/4 bg-gray-50 dark:bg-gray-800 mt-4 md:mt-10 hidden md:flex flex-col justify-center md:mx-10">
       <div
-        className="flex justify-between items-center px-3 p-2 mb-4 bg-white shadow-2xs w-full rounded-sm dark:bg-gray-700 border border-gray-200 border-b-0"
+        className="flex justify-between items-center px-3 p-2 mb-4 bg-white shadow-2xs w-full rounded-sm dark:bg-gray-700 border border-gray-200 border-b-0 dark:border-b"
         onClick={() => setOpen((prev) => !prev)}
       >
         <h1 className="text-gray-600 dark:text-gray-50 font-semibold ">
@@ -24,7 +24,7 @@ const Description = () => {
         />
       </div>
       {open && (
-        <div className="flex flex-col items-center h-fit md:gap-0 rounded-md bg-white py-4 dark:md:bg-gray-700 shadow">
+        <div className="flex flex-col items-center h-fit md:gap-0 rounded-md bg-white py-4 dark:md:bg-gray-700 shadow dark:border border-gray-200">
           {/* <div className="flex justify-center mb-1">
             <img
               src={me}
