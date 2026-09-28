@@ -7,9 +7,6 @@ const BabarProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="flex flex-col md:flex-row w-full">
-      <div className="w-full md:w-1/2 cursor-pointer">
-        <img src={babarImg} onClick={() => setIsModalOpen(true)} />
-      </div>
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div
@@ -46,6 +43,9 @@ const BabarProject = () => {
             https://babar.onrender.com/
           </a>
         </div>
+      </div>
+      <div className="w-full md:w-1/2 cursor-pointer">
+        <img src={babarImg} onClick={() => setIsModalOpen(true)} />
       </div>
     </div>
   );

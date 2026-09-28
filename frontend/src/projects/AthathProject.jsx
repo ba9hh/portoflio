@@ -1,16 +1,19 @@
 import { useState } from "react";
 import dyariImg from "../assets/athath.png";
 import Modal from "../components/modal";
-import dyari from "../assets/athathlogo.png";
+import athath from "../assets/athathlogo.png";
 import { useTranslation } from "react-i18next";
 const AthathProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
   return (
     <div className="flex flex-col md:flex-row w-full">
+      <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
+        <img src={dyariImg} onClick={() => setIsModalOpen(true)} />
+      </div>
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-200 dark:border-white p-6 md:p-0 dark:md:bg-gray-700">
         <div className="flex items-center gap-1">
-          <img className="w-7" src={dyari} />
+          <img className="w-4" src={athath} />
           <h1 className="text-xl font-medium text-[#53AB92]">Athath</h1>
         </div>
         <p className="text-gray-600 dark:text-gray-100 text-center md:w-3/4 text-sm">
@@ -28,7 +31,7 @@ const AthathProject = () => {
           </a>
         </div>
       </div>
-      <div className="w-full md:w-1/2 cursor-pointer">
+      <div className="w-full md:hidden cursor-pointer">
         <img src={dyariImg} onClick={() => setIsModalOpen(true)} />
       </div>
       {isModalOpen && (

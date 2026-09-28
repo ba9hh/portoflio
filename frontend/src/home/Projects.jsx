@@ -30,8 +30,8 @@ const Projects = () => {
         <div className="bg-white">
           <KtebnaProject />
           <DyariProject />
-          <BabarProject />
           <AthathProject />
+          <BabarProject />
         </div>
       )}
     </div>
