@@ -6,7 +6,7 @@ const BabarProject = () => {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="flex flex-col md:flex-row w-full">
+    <div className="flex flex-col md:flex-row w-full mt-2 md:mt-0">
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div
@@ -22,7 +22,7 @@ const BabarProject = () => {
           </div>
         </div>
       )}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-200 dark:border-white p-6 md:p-0 dark:md:bg-gray-700">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-200 dark:border-white p-6 md:p-0 dark:md:bg-gray-700 bg-white">
         <div className="flex items-center gap-1">
           <img className="w-7" src={babar} />
           <h1 className="text-xl font-medium text-gray-500 dark:text-gray-300">

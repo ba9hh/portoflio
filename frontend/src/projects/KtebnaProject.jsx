@@ -28,7 +28,7 @@ const KtebnaProject = () => {
       <div className="hidden md:block w-full md:w-1/2 cursor-pointer">
         <img src={ktebna} onClick={() => setIsModalOpen(true)} />
       </div>
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-200 dark:border-white p-6 md:p-0 dark:md:bg-gray-700">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-2 md:border border-gray-200 dark:border-white p-6 md:p-0 dark:md:bg-gray-700 bg-white">
         <div className="flex items-center gap-1">
           <span className="w-7 text-amber-700">{book}</span>
           <h1 className="text-xl font-medium text-amber-800 text-[#1894A5]">

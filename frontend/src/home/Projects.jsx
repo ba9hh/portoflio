@@ -27,7 +27,7 @@ const Projects = () => {
         />
       </div>
       {open && (
-        <div className="bg-white">
+        <div className="">
           <KtebnaProject />
           <DyariProject />
           <AthathProject />
