@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import me from "../assets/ezedineImg.jpg";
 import { useTranslation } from "react-i18next";
 import upArrow from "../assets/up-arrow.png";
-const Description = () => {
+const AboutMe = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="sticky top-20 ml-auto h-fit w-full md:w-1/4 bg-gray-50 dark:bg-gray-800 mt-4 md:mt-10 hidden md:flex flex-col justify-center md:mx-10">
+    <div className="flex flex-col justify-center h-fit w-full bg-gray-50 dark:bg-gray-800 mt-4 ">
       <div
         className="flex justify-between items-center px-3 p-2 mb-4 bg-white shadow-2xs w-full rounded-sm dark:bg-gray-700 border border-gray-200 border-b-0"
         onClick={() => setOpen((prev) => !prev)}
@@ -51,4 +51,4 @@ const Description = () => {
   );
 };
 
-export default Description;
+export default AboutMe;

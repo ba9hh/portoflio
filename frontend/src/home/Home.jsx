@@ -5,6 +5,7 @@ import Header from "./Header";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Projects from "./Projects";
+import AboutMe from "./AboutMe";
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const { t } = useTranslation();
@@ -16,11 +17,11 @@ const Home = () => {
     }
   }, [isDarkMode]);
   return (
-    <div className="min-h-screen w-full bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Header />
       <div className="flex flex-col md:flex-row gap-1">
         <div className="md:hidden">
-          <Description />
+          <AboutMe />
         </div>
         <div className="w-full md:w-3/4 mt-4 md:mt-10">
           <section id="projects">
